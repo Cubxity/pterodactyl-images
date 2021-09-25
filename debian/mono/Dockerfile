@@ -1,7 +1,7 @@
 FROM mono:slim
 
 RUN apt-get update \
-  && apt-get -y install iproute2 ca-certificates dnsutils libsdl2 \
+  && apt-get -y install iproute2 ca-certificates dnsutils libsdl2-2.0-0 \
   && useradd -m -d /home/container container
 
 USER container
